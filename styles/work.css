@@ -1,0 +1,47 @@
+#logo {
+  width: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  width: 100%; /* changed from 800 pixels */
+  margin: 0 auto;
+  background-color: #fffded;
+}
+
+.nav_bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.nav_bar ul li {
+  float: left;
+  position: relative;
+  background-color: #03858f;
+  width: 20%;
+}
+.nav_bar ul li a {
+  display: block;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.nav_bar ul li:hover {
+  background-color: #03868fe7;
+}
+
+footer {
+  background-color: #383838;
+  clear: both;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  padding: 5px;
+}

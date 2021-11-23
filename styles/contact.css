@@ -1,0 +1,76 @@
+#logo {
+  width: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  width: 100%; /* changed from 800 pixels */
+  margin: 0 auto;
+  background-color: #000000;
+  color: white;
+}
+
+.nav_bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.nav_bar ul li {
+  float: left;
+  position: relative;
+  background-color: #03858f;
+  width: 20%;
+}
+.nav_bar ul li a {
+  display: block;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.nav_bar ul li:hover {
+  background-color: #03868fe7;
+}
+
+aside {
+  float: left;
+  font-size: xxx-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 5em;
+  padding-top: 1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+section {
+  float: right;
+}
+
+form {
+  padding-top: 5em;
+  padding-right: 20em;
+  display: grid;
+}
+#side1 {
+  clear: both;
+  width: 33%;
+}
+
+form label {
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: #383838;
+  clear: both;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  padding: 5px;
+}
