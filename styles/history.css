@@ -1,11 +1,16 @@
+/* DEVELOPER: Cristhian Molina, IS117-101, Fall 2021 */
 #logo {
   width: 100%;
+}
+
+main {
+  margin-bottom: 20%;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
-  width: 100%; /* changed from 800 pixels */
+  width: 100%;
   margin: 0 auto;
   background-color: #000000;
 }
@@ -20,7 +25,7 @@ body {
   float: left;
   position: relative;
   background-color: #03858f;
-  width: 20%;
+  width: 25%;
 }
 .nav_bar ul li a {
   display: block;
@@ -50,6 +55,13 @@ main img {
   padding-left: 100px;
 }
 
+#exp h1 {
+  color: rgb(49, 137, 172);
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
 #exp p {
   color: white;
   font-size: x-large;
@@ -61,6 +73,76 @@ footer {
   text-align: center;
   color: white;
   font-weight: bold;
-  font-size: large;
-  padding: 5px;
+  font-size: small;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#mobile_menu {
+  display: none;
+}
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+  main img {
+    width: 90%;
+  }
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+  #ceo {
+    float: none;
+    padding-left: 25px;
+  }
+
+  main img {
+    width: 90%;
+  }
+
+  #exp {
+    width: 95%;
+    float: left;
+    padding-left: 10px;
+  }
+
+  #exp p {
+    color: white;
+    font-size: medium;
+  }
+  #nav_menu {
+    display: none;
+  }
+  #mobile_menu {
+    display: block;
+  }
+
+  .nav_bar ul li {
+    float: left;
+    position: relative;
+    background-color: #03858f;
+    width: 20%;
+    margin-left: 5px;
+  }
+  .nav_bar ul li a {
+    display: block;
+    text-align: center;
+    padding: 1%;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 160%;
+  }
+
+  .slicknav_menu {
+    background-color: #03868fe7 !important;
+  }
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+  body {
+    font-size: 90%;
+  }
 }

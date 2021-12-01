@@ -1,5 +1,9 @@
+/* DEVELOPER: Cristhian Molina, IS117-101, Fall 2021 */
 * {
   margin: 0%;
+}
+main {
+  margin-bottom: 20%;
 }
 
 #logo {
@@ -9,9 +13,10 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
-  width: 100%; /* changed from 800 pixels */
+  width: 100%;
   margin: 0 auto;
-  background-color: #fffded;
+  background-color: #000000;
+  color: white;
 }
 
 .nav_bar ul {
@@ -24,7 +29,7 @@ body {
   float: left;
   position: relative;
   background-color: #03858f;
-  width: 20%;
+  width: 25%;
 }
 .nav_bar ul li a {
   display: block;
@@ -60,27 +65,102 @@ body {
 .description {
   float: left;
   width: 25%;
-  border: solid red;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
+  border: solid 1px white;
+  margin-top: 5.47%;
+  margin-right: 3.13%;
 }
 
 #recent_video {
-  padding-top: 20px;
-  padding-right: 20px;
+  padding-top: 2%;
+  padding-right: 2%;
   float: right;
 }
 
 iframe {
-  border-radius: 40px;
+  border-radius: 4.2%;
 }
-
+#recent_video h2 {
+  padding-left: 2%;
+}
 footer {
   background-color: #383838;
+  padding: 10px;
   clear: both;
   text-align: center;
   color: white;
   font-weight: bold;
-  font-size: large;
-  padding: 5px;
+  font-size: small;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#mobile_menu {
+  display: none;
+}
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+  iframe {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+  .description {
+    float: left;
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10.47%;
+    margin-right: 3.13%;
+    font-size: small;
+  }
+
+  #des {
+    font-size: x-small;
+  }
+  #recent_video {
+    float: left;
+    margin: 5%;
+  }
+
+  #nav_menu {
+    display: none;
+  }
+  #mobile_menu {
+    display: block;
+  }
+
+  .nav_bar ul li {
+    float: left;
+    position: relative;
+    background-color: #03858f;
+    width: 20%;
+    margin-left: 5px;
+  }
+  .nav_bar ul li a {
+    display: block;
+    text-align: center;
+    padding: 1%;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 160%;
+  }
+
+  .slicknav_menu {
+    background-color: #03868fe7 !important;
+  }
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+  body {
+    font-size: 90%;
+  }
 }

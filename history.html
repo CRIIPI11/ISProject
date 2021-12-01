@@ -1,3 +1,4 @@
+<!-- DEVELOPER: Cristhian Molina, IS117-101, Fall 2021 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,27 +7,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/history.css" />
+    <link rel="stylesheet" href="styles/slicknav.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#nav_menu").slicknav({ prependTo: "#mobile_menu" });
+      });
+    </script>
   </head>
   <body>
     <header>
       <img id="logo" src="media/Screenshot 2021-11-11 162312.png" alt="title" />
     </header>
-    <div class="nav_bar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="history.html">History</a></li>
-        <li><a href="ethic.html">Ethic</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <div class="container">
+      <nav id="mobile_menu"></nav>
+  	  <nav id="nav_menu">
+      <nav class="nav_bar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="ethic.html">Ethic</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>            
+      </nav>
     </div>
     <main>
       <section id="exp">
+        <h1>About The Creator</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
-          minima doloremque blanditiis ipsa. Maxime odit assumenda perferendis,
-          maiores harum exercitationem autem eos sunt provident praesentium
-          dolore dolor, similique, ipsum nam!
+          Since the eraly years, our creator started developing a passion for visual arts.
+          During the early school years Eric started deleping a love for animated visual.
+          Not much long, this love later made Eric start creating his own work such as 
+          drawings and ideas of even making a movie one day. As the years passed, Eric 
+          started working more making videos for local projects even being asked to produce
+          educational videos for the school at his hometown. Improving his skills Eric later
+          started working on bigger projects for more artists and companies until making what 
+          today is The Prime Prodigy Company. However, Eric doesn't plan to stop here as his future
+          plans include making movies of his own and also making a reality all his child characters.  
         </p>
       </section>
       <aside>

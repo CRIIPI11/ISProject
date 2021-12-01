@@ -1,3 +1,4 @@
+/* DEVELOPER: Cristhian Molina, IS117-101, Fall 2021 */
 #logo {
   width: 100%;
 }
@@ -5,7 +6,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
-  width: 100%; /* changed from 800 pixels */
+  width: 100%;
   margin: 0 auto;
   background-color: #000000;
   color: white;
@@ -21,7 +22,7 @@ body {
   float: left;
   position: relative;
   background-color: #03858f;
-  width: 20%;
+  width: 25%;
 }
 .nav_bar ul li a {
   display: block;
@@ -45,6 +46,7 @@ aside {
   padding-top: 1em;
   text-transform: uppercase;
   text-align: center;
+  font-weight: bolder;
 }
 
 section {
@@ -52,17 +54,55 @@ section {
 }
 
 form {
-  padding-top: 5em;
+  float: left;
+  padding-top: 50px;
   padding-right: 20em;
-  display: grid;
 }
-#side1 {
+.side1 {
+  float: left;
+  width: 25%;
+  padding-right: 10em;
+  text-align: center;
+}
+#mess {
   clear: both;
-  width: 33%;
+}
+.name {
+  width: 100%;
+}
+#email {
+  width: 100%;
+}
+#subjt {
+  width: 150%;
+}
+input {
+  height: 2em;
+  width: 35em;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  font-size: medium;
 }
 
-form label {
+main {
+  margin-bottom: 20%;
+}
+
+label {
+  padding-bottom: 30px;
   text-transform: uppercase;
+  font-size: large;
+  font-weight: bold;
+}
+
+#but {
+  width: 5em;
+  margin-left: 40%;
+  margin-top: 30px;
+}
+textarea {
+  margin-top: 5px;
+  border-radius: 10px;
 }
 
 footer {
@@ -71,6 +111,106 @@ footer {
   text-align: center;
   color: white;
   font-weight: bold;
-  font-size: large;
-  padding: 5px;
+  font-size: small;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#mobile_menu {
+  display: none;
+}
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+  iframe {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+  aside {
+    float: none;
+    padding-left: 0em;
+    font-weight: 700;
+  }
+
+  form {
+    clear: both;
+    padding-top: 0px;
+    padding-right: 0em;
+    padding-left: 15%;
+  }
+  .side1 {
+    float: left;
+    width: 15%;
+  }
+
+  .name {
+    width: 180%;
+  }
+  #email {
+    width: 250%;
+  }
+  #subjt {
+    width: 250%;
+  }
+  input {
+    height: 2em;
+    width: 35em;
+    font-size: medium;
+  }
+
+  main {
+    margin-bottom: 20%;
+  }
+
+  label {
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  #but {
+    margin-left: 20%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  #nav_menu {
+    display: none;
+  }
+  #mobile_menu {
+    display: block;
+  }
+
+  .nav_bar ul li {
+    float: left;
+    position: relative;
+    background-color: #03858f;
+    width: 20%;
+    margin-left: 5px;
+  }
+  .nav_bar ul li a {
+    display: block;
+    text-align: center;
+    padding: 1%;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 160%;
+  }
+
+  .slicknav_menu {
+    background-color: #03868fe7 !important;
+  }
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+  body {
+    font-size: 90%;
+  }
 }

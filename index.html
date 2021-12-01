@@ -1,3 +1,4 @@
+<!-- DEVELOPER: Cristhian Molina, IS117-101, Fall 2021 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,20 +7,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/slicknav.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#nav_menu").slicknav({ prependTo: "#mobile_menu" });
+      });
+    </script>
   </head>
   <body>
     <header>
       <img id="logo" src="media/Screenshot 2021-11-11 162312.png" alt="title" />
     </header>
+    
     <div class="container">
+      <nav id="mobile_menu"></nav>
+  	  <nav id="nav_menu">
       <nav class="nav_bar">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="history.html">History</a></li>
           <li><a href="ethic.html">Ethic</a></li>
-          <li><a href="work.html">Work</a></li>
           <li><a href="contact.html">Contact</a></li>
-        </ul>
+        </ul>            
       </nav>
     </div>
     <main>
@@ -36,18 +47,15 @@
       </div>
       <section class="description">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-          repellat alias aut suscipit accusantium, voluptates nobis repudiandae
-          rem sint at veritatis deleniti nulla eaque error magnam fuga
-          temporibus provident vitae.
+          As an artistic company, our top priority is always do everything with
+          the best quality possible also working with the best quality which is love
+          and passion for the art. This passion is what characterize us and is what 
+          makes customers choose us to make their artistic projects come to life.
         </p>
       </section>
       <section class="description">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-          repellat alias aut suscipit accusantium, voluptates nobis repudiandae
-          rem sint at veritatis deleniti nulla eaque error magnam fuga
-          temporibus provident vitae.
+          Visual Production is what makes us and we are open to work with any brand that looks to expand their fronties. So whit this we love the limitless possibilities of customers, from indepedent artist, to big company labels the goals is always the same.
         </p>
       </section>
       <!--<section class="description">
@@ -59,6 +67,7 @@
         </p>
       </section>-->
       <aside id="recent_video">
+        <h2>Our Lastest Video</h2>
         <iframe
           src="https://www.youtube.com/embed/yV79ArKRnYc"
           frameborder="0"

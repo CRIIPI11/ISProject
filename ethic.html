@@ -1,3 +1,4 @@
+<!-- DEVELOPER: Cristhian Molina, IS117-101, Fall 2021 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,19 +7,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/ethic.css" />
+    <link rel="stylesheet" href="styles/slicknav.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#nav_menu").slicknav({ prependTo: "#mobile_menu" });
+      });
+    </script>
   </head>
   <body>
     <header>
       <img id="logo" src="media/Screenshot 2021-11-11 162312.png" alt="title" />
     </header>
-    <div class="nav_bar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="history.html">History</a></li>
-        <li><a href="ethic.html">Ethic</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <div class="container">
+      <nav id="mobile_menu"></nav>
+  	  <nav id="nav_menu">
+      <nav class="nav_bar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="ethic.html">Ethic</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>            
+      </nav>
     </div>
     <main>
       <div class="gear">
